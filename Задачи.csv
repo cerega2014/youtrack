@@ -1,0 +1,289 @@
+﻿"ID задачи","Проект","Теги","Заголовок","Заявитель","Создана","Обновлена","Завершенная","Priority","Type","State","Assignee","Sprints","Environment","Story points","Описание","Голоса"
+"G2S-129","Group 2S","Star","Crash: при нажатие на Refresh","sergey kazakov","4 Dec 2023 12:39","4 Dec 2023 16:46",,"Show-stopper","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Шаги по воспроизведению:**
+
+1. Открыть приложение TO-DO-MVP
+
+2. Тапнуть на ""Action menu""
+
+   ![](кебаб меню.png)
+
+3. Тапнуть на ""Refresh""
+
+   ![](рефрещ.png)
+
+   **ОР: Приложение обновится**
+
+   **ФР: Приложение вылетает**
+
+   **Логи:**[краш 1.txt](%D0%BA%D1%80%D0%B0%D1%88%201.txt)","0"
+"G2S-128","Group 2S","Star","Mobile App Testing -Sergey Kazakov","sergey kazakov","4 Dec 2023 12:26","4 Dec 2023 13:50",,"Normal","Task","Open","Unassigned","Unscheduled","No environment",,,"0"
+"G2S-135","Group 2S","Star","Сброс данных при перезапуске приложения","sergey kazakov","4 Dec 2023 13:50","4 Dec 2023 13:50",,"Critical","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Pre-conditions: Создать несколько задач**
+
+**Шаги по воспроизведению:**
+
+1. Открыть приложение TO-DO-MVP
+2. Закрыть приложение TO-DO-MVP
+
+   3.Открыть приложение TO-DO-MVP
+
+**ФР**\: Все задачи удалены
+
+**ОР**\: Задачи которые были до выхода отображаются
+
+
+
+
+
+
+","0"
+"G2S-134","Group 2S","Star","Статистика: Неправильное отображение информации","sergey kazakov","4 Dec 2023 13:40","4 Dec 2023 13:40",,"Major","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Pre-conditions: Создать несколько задач, и отметить несколько завершенными**
+
+**Шаги по воспроизведению:**
+
+1. Открыть приложение TO-DO-MVP
+2. Тапнуть на боковое меню
+
+   ![](Боковое.png)
+3. Тапнуть на ""Statistics""
+
+   ![](статистика.png)
+
+   **ФР: Отображает неверную информацию**
+
+   ![](статистика 2.png)
+
+   **ОР: Статистика отображается верно(Active tasks 2, completed tasks 2)**","0"
+"G2S-133","Group 2S","Star","Clear completed: Не работает функция","sergey kazakov","4 Dec 2023 13:30","4 Dec 2023 13:30",,"Major","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Pre-conditions: Создать несколько задач, и отметить несколько завершенными**
+
+**Шаги по воспроизведению:**
+
+1. Открыть приложение TO-DO-MVP
+2. Тапнуть на ""action menu""
+
+   ![](кебаб меню.png)
+3. Тапнуть на  ""Clear completed""
+
+   ![](Удаление.png)
+
+   **ОР: Завершенные задачи удалились**
+
+   **ФР: Завершенные задачи не удалились**","0"
+"G2S-132","Group 2S","Star","Фильтр: Не показывает только активные задачи","sergey kazakov","4 Dec 2023 13:23","4 Dec 2023 13:23",,"Normal","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Pre-conditions: Создать несколько задач, и отметить несколько завершенными**
+
+**Шаги по воспроизведению:**
+
+1. Открыть приложение TO-DO-MVP
+2. Тапнуть на фильтры
+
+   ![](фильтр.png)
+3. Выбрать ""Active""
+
+   **ОР: Отображаются только активные задачи**
+
+   **ФР: Отображаются все задачи**
+
+
+","0"
+"G2S-131","Group 2S","Star","Crash: при создание новой задачи с содержанием спецсимволов","sergey kazakov","4 Dec 2023 12:57","4 Dec 2023 12:57",,"Show-stopper","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Шаги по воспроизведению:**
+
+1. Открыть приложениее TO-DO-MVP
+2. Тапнуть на элемент ""+""
+
+   ![](плюс.png)
+3. В поле ""Title"" ввести !@# и нажать на ""галочку""
+
+   ![](баг 3.png)
+
+   **ОР: Новая задача успешно создана**
+
+   **ФР: Задача не создана, приложение вылетает**
+
+   **Логи:**[краш 3.txt](краш 3.txt)
+
+   
+","0"
+"G2S-130","Group 2S","Star","Crash:при создание новой задачи при вводе цифр","sergey kazakov","4 Dec 2023 12:49","4 Dec 2023 12:49",,"Show-stopper","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2  Android Studio Build #AI-231.9392.1.2311.11076708, built on November 9, 202. Pixel 7 Pro Android 13 1440x3120 560 dpi",,"**Шаги по воспроизведению:**
+
+1. Открыть приложение TO-DO-MVP
+2. Тапнуть на элемент ""+""
+
+   ![](плюс.png)
+3. В поле ""Title"" ввести 123 и тапнуть ""галочку""
+
+   ![](баг 2.png)
+
+   **ОР: Новая задача успешно создана**
+
+   **ФР: Задача не создана, приложение вылетает**
+
+   **Логи:**[краш 2.txt](краш 2.txt)","0"
+"G2S-87","Group 2S","Star","Web App Testing - Sergey Kazakov","sergey kazakov","4 Nov 2023 14:48","4 Nov 2023 16:59",,"Normal","Task","Open","Unassigned","Unscheduled","No environment",,,"0"
+"G2S-93","Group 2S","Star","Коррекция цены: после смены конфигурации цена не изменяется","sergey kazakov","4 Nov 2023 16:59","4 Nov 2023 16:59",,"Major","Bug","Open","Unassigned","Unscheduled","""Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)""",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demowebshop.tricentis.com/build-your-own-expensive-computer-2
+2. В конфигурации ""HDD"" выбрать 400GB
+
+
+
+**ФР: Цена не изменилась**
+
+![](цена до.png){width=70%}![](ццена после.png){width=70%}
+
+**ОР: Цена изменилась**","0"
+"G2S-92","Group 2S","Star","Отсутствие идентификатора валюты у товаров","sergey kazakov","4 Nov 2023 16:32","4 Nov 2023 16:32",,"Normal","Bug","Open","Unassigned","Unscheduled","""Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)""",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу  https://demowebshop.tricentis.com/
+
+**ФР: Отсутствие идентификатора валюты у товаров**
+
+![](Идентификатор валюты.png){width=70%}
+
+**ОР: Идентификатор валюты ""$"" присутствует**
+
+
+","0"
+"G2S-90","Group 2S","Star","Добавление в избранное: отсутствует функция у данного товара","sergey kazakov","4 Nov 2023 15:54","4 Nov 2023 16:11",,"Major","Bug","Open","Unassigned","Unscheduled","""Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)""",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demowebshop.tricentis.com/used-phone
+
+**ФР: Отсутствует кнопка ""Add to Wishlist""**
+
+![](Wishlist.png){width=70%}
+
+**ОР: Присутствует кнопка ""Add to Wishlist""**","0"
+"G2S-89","Group 2S","Star","Добавление в корзину: отсутствует функция в категории ""camera,photo""","sergey kazakov","4 Nov 2023 15:38","4 Nov 2023 16:10",,"Show-stopper","Bug","Open","Unassigned","Unscheduled","""Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)""",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demowebshop.tricentis.com/camera-photo
+
+**ФР:**  Под товаром отсутствует кнопка ""Add to cart""
+
+![](кнопка корзины.png){width=70%}
+
+**ОР:** Под товаром присутствует кнопка ""Add to cart""","0"
+"G2S-91","Group 2S","Star","Фильтр по цене: Отсутствие в категории ""Apparel & Shoes""","sergey kazakov","4 Nov 2023 16:07","4 Nov 2023 16:07",,"Normal","Bug","Open","Unassigned","Unscheduled","""Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)""",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demowebshop.tricentis.com/apparel-shoes
+
+**ФР: Отсутствует возможность отфильтровать товар по цене**
+
+![](фильтр.png){width=70%}
+
+**ОР: Присутствует возможность отфильтровать товар по цене**","0"
+"G2S-88","Group 2S","Star","Сброс пароля: не приходит email с инструкцией","sergey kazakov","4 Nov 2023 15:09","4 Nov 2023 15:38",,"Show-stopper","Bug","Open","Unassigned","Unscheduled","""Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)""",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demowebshop.tricentis.com/passwordrecovery
+2. Ввести email зарегистрированного пользователя
+3. Нажать на кнопку ""Recover""
+4. Проверить email
+
+**ФР:** Письмо с инструкцией по сбросу пароля на почту не приходит
+
+**ОР:** На почту пришло письмо с дальнейшей инструкцией по сбросу пароля","0"
+"G2S-18","Group 2S","Star","Лого: перенаправление на главную страницу при нажатии","sergey kazakov","21 Oct 2023 17:12","21 Oct 2023 17:13",,"Normal","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. Нажать на лого ""Guru99 telecom""
+
+**ФР:** Переход на главную страницу
+
+**ОР:** Страница обновлена ","0"
+"G2S-8","Group 2S","Star","Testing Documentation  - Sergey Kazakov","sergey kazakov","21 Oct 2023 14:37","21 Oct 2023 17:12",,"Normal","Task","Open","Unassigned","Unscheduled","No environment",,,"0"
+"G2S-17","Group 2S","Star","Add Customer: невозможно создать пользователя при вводе в поле ""address"" запятой или точки","sergey kazakov","21 Oct 2023 16:49","21 Oct 2023 16:51",,"Show-stopper","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. Статус Background Check выбрать ""Done""
+3. Заполнить поля корректными данными:
+   FirstName - Ivan
+   lastName - Ivanov
+   Email - test@test.com
+   Address - street, dom
+   MobileNumber - 123345
+4. Нажать кнопку ""SUBMIT""
+
+**ФР:** Появляется ошибка ""Please fill all fields"" дальнейшее создание пользователя невозможно
+
+![](Ошибка address.png){width=70%}
+
+**ОР:** Ошибка отсутствует, пользователь успешно создан","0"
+"G2S-15","Group 2S","Star","Поле Address: Предупреждающее сообщение при вводе точки и запятой","sergey kazakov","21 Oct 2023 16:14","21 Oct 2023 16:49",,"Minor","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. В поле ""Address"" ввести точку и запятую
+
+**ФР:** Появляется предупреждающее сообщение ""Special characters are not allowed""
+
+![](адрес точка запятая.png){width=70%}
+
+**ОР:** Точка и запятая разрешены, предупреждающего сообщения нее должно быть","0"
+"G2S-16","Group 2S","Star","Поле FirstName: Некорректное предупреждение при пустом поле","sergey kazakov","21 Oct 2023 16:33","21 Oct 2023 16:34",,"Minor","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. Выбрать поле ""FirstName"" данные не вводить
+3. Нажать на пустое место на странице
+
+**ФР:** Появилось предупреждающее сообщение ""Customer name must not be blank""
+
+![](пустые поля.png){width=70%}
+
+**ОР:** Появилось предупреждающее сообщение ""First Name must not be blank""","0"
+"G2S-14","Group 2S","Star","Поле Address: Отсутствие предупреждающего сообщения при вводе кириллицы","sergey kazakov","21 Oct 2023 16:08","21 Oct 2023 16:08",,"Minor","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. В поле ""Address"" ввести кириллицу - Тест
+
+**ФР:** Отсутствие предупреждающего сообщения
+
+![](адрес.png){width=70%}
+
+**ОР:** При вводе кириллицы появляется сообщение ""Cyrillic are not allowed""","0"
+"G2S-13","Group 2S","Star","Поле LastName: Некорректное предупреждающее сообщение при вводе кириллицы","sergey kazakov","21 Oct 2023 15:47","21 Oct 2023 15:57",,"Minor","Bug","Open","Unassigned","Unscheduled","No environment",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. В поле ""LastName"" ввести кириллицу - Тест
+
+**ФР:** При вводе кириллицы появляется сообщение ""**Numbers are not allowed""**
+
+![](фирстнаме.png){width=70%}
+
+**ОР:** При вводе кириллицы появляется сообщение ""**Cyrillic are not allowed**""","0"
+"G2S-12","Group 2S","Star","Поле FirstName: Некорректное предупреждающее сообщение  при вводе кириллицы","sergey kazakov","21 Oct 2023 15:38","21 Oct 2023 15:56",,"Minor","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+2. Ввести буквы (кириллицу -Тест)
+
+**ФР:** При вводе кириллицы появляется сообщение ""**Numbers are not allowed""**
+
+![](firstname cirilyc.png){width=70%}
+
+**ОР:** При вводе кириллицы появляется сообщение ""**Cyrillic are not allowed**""
+
+
+","0"
+"G2S-11","Group 2S","Star","Billing address: Отсутствие отметки ""*"" обязательных полей","sergey kazakov","21 Oct 2023 15:19","21 Oct 2023 15:19",,"Minor","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/addcustomer.php
+
+**ФР:** Обязательные поля не отмечены ""\*""
+
+![](Отметка полей.png){width=70%}
+
+**ОР: Обязательные поля отмечены ""*""**","0"
+"G2S-10","Group 2S","Star","Боковое меню: Отсутствие кнопки ""Delete Customer""","sergey kazakov","21 Oct 2023 15:08","21 Oct 2023 15:08",,"Critical","Bug","Open","Unassigned","Unscheduled","No environment",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/index.html
+2. Нажать на кнопку бокового меню
+
+**ФР:** В меню отображены кнопки Home,Add Customer, Add Tariff Plan, Add Tariff Plan to Customer, Pay Billing
+
+![](Боковое меню.png){width=70%}
+
+ОР: В меню отображены кнопки Add Customer, Add Tariff Plan, Add Tariff Plan to Customer, Pay Billing, Delete Customer.","0"
+"G2S-9","Group 2S","Star","Главная страница: Отсутствие кнопки ""Delete Customer"" ","sergey kazakov","21 Oct 2023 14:54","21 Oct 2023 14:54",,"Critical","Bug","Open","Unassigned","Unscheduled","Windows 11 Домашняя версия 22Н2 Google Chrome Версия 114.0.5735.199 (Официальная сборка), (64 бит)",,"**Шаги по воспроизведению:**
+
+1. Открыть страницу https://demo.guru99.com/telecom/index.html
+
+**ФР:** На главной странице присутствует картинка с телефоном и 4 активные кнопки(Add Customer, Add Tariff Plan, Add Tariff Plan to Customer, Pay Billing)
+
+![](main page отсутсвие кнопки.png){width=70%}
+
+**ОР:** На главной странице присутствует картинка с телефоном и 5 активных кнопок(Add Customer, Add Tariff Plan, Add Tariff Plan to Customer, Pay Billing, Delete Customer)","0"
